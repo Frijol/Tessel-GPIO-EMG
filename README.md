@@ -1,7 +1,7 @@
 Tessel-GPIO-EMG-Module
 ======================
 
-Code for the EMG module for Tessel's GPIO port.
+Example code for the EMG module for Tessel's GPIO port.
 
 This code is intended for use with specific hardware, wired to electrodes on the bicep.
 
