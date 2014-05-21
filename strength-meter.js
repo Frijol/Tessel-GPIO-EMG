@@ -3,7 +3,7 @@
 var tessel = require('tessel');
 var servo = require('servo-pca9685').use(tessel.port('A'));
 
-// Working with a GPIO module which reads A2 as channel 1 and A6 as channel 2.
+// Working with a GPIO module A6 as channel 1.
 var gpio = tessel.port('gpio');
 var ch1 = gpio.analog[6];
 
