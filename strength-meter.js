@@ -5,19 +5,18 @@ var servo = require('servo-pca9685').use(tessel.port('A'));
 
 // Working with a GPIO module which reads A2 as channel 1 and A6 as channel 2.
 var gpio = tessel.port('gpio');
-var ch1 = gpio.analog[2];
-var ch2 = gpio.analog[6]; // Only using channel 2 for this demo
+var ch1 = gpio.analog[6];
 
 servo.on('ready', function() {
   setInterval(function() {
     // Read channel
-    reading = ch2.read();
+    var reading = ch1.read();
     // Scale range
     var subtr = 560 - reading;
     if (subtr <= 0) {
       subtr = 0.01;
     }
-    scaled = subtr/100;
+    var scaled = subtr/100;
     // Ensure that number is within legal bounds
     if (scaled > 1) {
       scaled = 1;
