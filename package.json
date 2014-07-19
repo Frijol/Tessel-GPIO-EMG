@@ -1,0 +1,30 @@
+{
+  "name": "EMG",
+  "version": "0.0.0",
+  "description": "Electrode module for the Tessel",
+  "main": "strength-meter.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Frijol/Tessel-GPIO-EMG-Module.git"
+  },
+  "keywords": [
+    "emg",
+    "electrode",
+    "eeg",
+    "ekg",
+    "ecg",
+    "tessel"
+  ],
+  "author": "Kelsey Breseman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Frijol/Tessel-GPIO-EMG-Module/issues"
+  },
+  "homepage": "https://github.com/Frijol/Tessel-GPIO-EMG-Module",
+  "dependencies": {
+    "servo-pca9685": "^0.1.2"
+  }
+}
